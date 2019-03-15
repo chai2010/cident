@@ -1,7 +1,8 @@
-# 标识符
+// Copyright 2019 <chaishushan{AT}gmail.com>. All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
 
-```go
-package main
+package ident_test
 
 import (
 	"fmt"
@@ -9,7 +10,7 @@ import (
 	"github.com/chai2010/ident"
 )
 
-func main() {
+func Example() {
 	fmt.Println(ident.New("main", "main"))
 	fmt.Println(ident.New("path/to/pkg", "main", "count"))
 	fmt.Println(ident.New("github.com/chai2010/pbgo", "HttpRule"))
@@ -21,4 +22,3 @@ func main() {
 	// $github_com_chai2010_pbgo_$HttpRule
 	// $主包_$主函数
 }
-```
