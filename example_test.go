@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package ident_test
+package cident_test
 
 import (
 	"fmt"
 
-	"github.com/chai2010/ident"
+	"github.com/chai2010/cident"
 )
 
 func Example() {
-	fmt.Println(ident.New("main", "main"))
-	fmt.Println(ident.New("path/to/pkg", "main", "count"))
-	fmt.Println(ident.New("github.com/chai2010/pbgo", "HttpRule"))
-	fmt.Println(ident.New("主包", "主函数"))
+	fmt.Println(cident.New("main", "main"))
+	fmt.Println(cident.New("path/to/pkg", "main", "count"))
+	fmt.Println(cident.New("github.com/chai2010/pbgo", "HttpRule"))
+	fmt.Println(cident.New("主包", "主函数"))
 
 	// Output:
 	// $main_$main

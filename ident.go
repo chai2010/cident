@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // 映射标识符名字.
-package ident
+package cident
 
 import (
 	"strings"

@@ -1,4 +1,4 @@
-# 标识符
+# C标识符 - 生成C标识符
 
 ```go
 package main
@@ -6,14 +6,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/chai2010/ident"
+	"github.com/chai2010/cident"
 )
 
 func main() {
-	fmt.Println(ident.New("main", "main"))
-	fmt.Println(ident.New("path/to/pkg", "main", "count"))
-	fmt.Println(ident.New("github.com/chai2010/pbgo", "HttpRule"))
-	fmt.Println(ident.New("主包", "主函数"))
+	fmt.Println(cident.New("main", "main"))
+	fmt.Println(cident.New("path/to/pkg", "main", "count"))
+	fmt.Println(cident.New("github.com/chai2010/pbgo", "HttpRule"))
+	fmt.Println(cident.New("主包", "主函数"))
 
 	// Output:
 	// $main_$main
